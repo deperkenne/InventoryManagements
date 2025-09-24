@@ -1,0 +1,14 @@
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\bin\Debug\net8.0\BestandsManager.exe
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\bin\Debug\net8.0\BestandsManager.deps.json
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\bin\Debug\net8.0\BestandsManager.runtimeconfig.json
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\bin\Debug\net8.0\BestandsManager.dll
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\bin\Debug\net8.0\BestandsManager.pdb
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.AssemblyInfoInputs.cache
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.AssemblyInfo.cs
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.csproj.CoreCompileInputs.cache
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.dll
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\refint\BestandsManager.dll
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.pdb
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.genruntimeconfig.cache
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\ref\BestandsManager.dll

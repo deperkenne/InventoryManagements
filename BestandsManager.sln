@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestandsManager", "BestandsManager\BestandsManager.csproj", "{7C65542E-C460-4C93-AD93-1158DA2B4391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestandsManager.Tests", "BestandsManager.Tests\BestandsManager.Tests.csproj", "{31C2F10C-66A2-468F-8EFE-50A718E2293F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C65542E-C460-4C93-AD93-1158DA2B4391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C65542E-C460-4C93-AD93-1158DA2B4391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C65542E-C460-4C93-AD93-1158DA2B4391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C65542E-C460-4C93-AD93-1158DA2B4391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C2F10C-66A2-468F-8EFE-50A718E2293F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C2F10C-66A2-468F-8EFE-50A718E2293F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C2F10C-66A2-468F-8EFE-50A718E2293F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C2F10C-66A2-468F-8EFE-50A718E2293F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {865D9FE2-712F-4202-AE21-BCE41D9860C2}
+	EndGlobalSection
+EndGlobal
