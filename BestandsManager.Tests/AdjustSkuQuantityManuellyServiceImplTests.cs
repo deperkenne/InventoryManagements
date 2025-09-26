@@ -1,7 +1,7 @@
-﻿using BestandsManager.Logistics.Logic;
-using BestandsManager.Logistics.Logics.Impl;
-using BestandsManager.Logistics.Model;
-using BestandsManager.Logistics.Repository;
+﻿using InventoryManagement.Logistics.Logics;
+using InventoryManagement.Logistics.Logics.Impl;
+using InventoryManagement.Logistics.Models;
+using InventoryManagement.Logistics.Repositories;
 using Moq;
 using Moq.Protected;
 using System;
@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BestandsManager.Tests
+namespace InventotyManagement.Tests
 { 
     public class AdjustSkuQuantityManuellyServiceImplTests
     {

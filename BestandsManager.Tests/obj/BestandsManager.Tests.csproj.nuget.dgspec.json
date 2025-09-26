@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj": {
-                "projectPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj"
+              "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj": {
+                "projectPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj"
               }
             }
           }
@@ -96,12 +96,12 @@
         }
       }
     },
-    "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj": {
+    "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj",
-        "projectName": "BestandsManager",
-        "projectPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj",
+        "projectUniqueName": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj",
+        "projectName": "InventoryManagement",
+        "projectPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj",
         "packagesPath": "C:\\Users\\Win11 Pro\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\obj\\",
         "projectStyle": "PackageReference",

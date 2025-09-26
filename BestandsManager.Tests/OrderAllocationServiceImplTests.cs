@@ -1,11 +1,11 @@
-﻿using BestandsManager.Logistics.Execptions;
-using BestandsManager.Logistics.Logic;
-using BestandsManager.Logistics.Logics.Impl;
-using BestandsManager.Logistics.Model;
-using BestandsManager.Logistics.Repository;
+﻿using InventoryManagement.Logistics.Execptions;
+using InventoryManagement.Logistics.Logics;
+using InventoryManagement.Logistics.Logics.Impl;
+using InventoryManagement.Logistics.Models;
+using InventoryManagement.Logistics.Repositories;
 using Moq;
 
-namespace BestandsManager.Tests
+namespace InventotyManagement.Tests
 {
     public class OrderAllocationServiceImplTests
     {

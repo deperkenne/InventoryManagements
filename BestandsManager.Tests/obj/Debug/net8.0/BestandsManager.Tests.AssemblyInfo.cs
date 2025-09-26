@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BestandsManager.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d02aa1015d1066a7982b8b1bdfd5dd3763e1c86a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d6ab8fecf8046ec3ffabef1016d6e985b3332ec")]
 [assembly: System.Reflection.AssemblyProductAttribute("BestandsManager.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BestandsManager.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,9 +1,9 @@
-﻿using BestandsManager.Logistics.Logic;
-using BestandsManager.Logistics.Model;
-using BestandsManager.Logistics.Repository;
+﻿using InventoryManagement.Logistics.Logics;
+using InventoryManagement.Logistics.Models;
+using InventoryManagement.Logistics.Repositories;
 using Moq;
 
-namespace BestandsManager.Tests
+namespace InventotyManagement.Tests
 {
     public class OrderCancellationServiceImplTests
     {

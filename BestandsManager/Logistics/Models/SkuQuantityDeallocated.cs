@@ -1,4 +1,4 @@
-﻿namespace BestandsManager.Logistics.Model
+﻿namespace InventoryManagement.Logistics.Models
 {
     public class SkuQuantityDeallocated : DomainEvent
     {
@@ -12,11 +12,11 @@
 
         public SkuQuantityDeallocated(string skuId, int quantity, string orderId, string lineNumber = "", string eventType = "deallocation")
         {
-            this.SkuId = skuId;
-            this.LineNumber = lineNumber;
-            this.QuantityDeallocated = quantity;
-            this.OrderId = orderId;
-            this.EventType = eventType;
+            SkuId = skuId;
+            LineNumber = lineNumber;
+            QuantityDeallocated = quantity;
+            OrderId = orderId;
+            EventType = eventType;
         }
     }
 }

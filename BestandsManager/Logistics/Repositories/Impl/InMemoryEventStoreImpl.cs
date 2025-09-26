@@ -1,8 +1,7 @@
-﻿using BestandsManager.Event;
-using BestandsManager.Logistics.Model;
-using BestandsManager.Logistics.Repository;
+﻿using InventoryManagement.Events;
+using InventoryManagement.Logistics.Models;
 
-namespace BestandsManager.Logistics.Repositories.Impl
+namespace InventoryManagement.Logistics.Repositories.Impl
 {
     // USE THIS CLASS ONLY FOR INTEGRATION TESTING!
     public class InMemoryEventStoreImpl : IEventStoreRepository

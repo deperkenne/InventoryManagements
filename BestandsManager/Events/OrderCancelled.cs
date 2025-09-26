@@ -1,6 +1,6 @@
-﻿using BestandsManager.Logistics.Model;
+﻿using InventoryManagement.Logistics.Models;
 
-namespace BestandsManager.Event
+namespace InventoryManagement.Events
 {
     internal class OrderCancelled : DomainEvent
     {

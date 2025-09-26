@@ -1,8 +1,8 @@
-﻿using BestandsManager.Logistics.Logics.Impl;
-using BestandsManager.Logistics.Model;
-using BestandsManager.Logistics.Repository;
+﻿using InventoryManagement.Logistics.Logics.Impl;
+using InventoryManagement.Logistics.Models;
+using InventoryManagement.Logistics.Repositories;
 
-namespace BestandsManager.Logistics.Logic
+namespace InventoryManagement.Logistics.Logics
 {
     public class AdjustSkuQuantityManuellyServiceImpl : IAdjustSkuQuantityManuellyService
     {

@@ -1,9 +1,9 @@
-﻿namespace BestandsManager.Logistics.Model
+﻿namespace InventoryManagement.Logistics.Models
 {
     public class CustomerOrder
     {
 
-        private String Id { get; set; }
+        private string Id { get; set; }
         private List<OrderLineItem> OrderLines { get; set; } = new List<OrderLineItem>();
         public DateTime OrderDate { get; }
         public bool IsCompleteDeliveryRequired { get; }
@@ -15,14 +15,14 @@
         {
             this.Id = Id;
             this.OrderDate = OrderDate;
-            this.IsCompleteDeliveryRequired = iscompleteDeliveryRequired;
-            this.Priority = priority;
-            this.Status = enumStatus;   
+            IsCompleteDeliveryRequired = iscompleteDeliveryRequired;
+            Priority = priority;
+            Status = enumStatus;   
         }
 
         public CustomerOrder(List<OrderLineItem> orderLines)
         {
-            this.OrderLines = orderLines;
+            OrderLines = orderLines;
         }
 
         public string GetId()
@@ -42,12 +42,12 @@
 
         public void SetEnumStatus(EnumOrderStatus status)
         {
-            this.Status = status;
+            Status = status;
         }
 
         public void SetOrderLineItems(List<OrderLineItem> orderLineItems)
         {
-            this.OrderLines = orderLineItems;
+            OrderLines = orderLineItems;
         }
 
         public List<OrderLineItem> GetOrderLines()
@@ -57,7 +57,7 @@
 
         public void AddOrderLine(OrderLineItem orderLineItem)
         {
-            this.OrderLines.Add(orderLineItem);
+            OrderLines.Add(orderLineItem);
         }
 
         public void printOrderDetail()

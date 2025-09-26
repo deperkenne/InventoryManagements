@@ -1,11 +1,12 @@
-﻿using BestandsManager.Logistics.Model;
+﻿
+using InventoryManagement.Logistics.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BestandsManager.Logistics.Logics.Impl
+namespace InventoryManagement.Logistics.Logics.Impl
 {
     public interface IAdjustSkuQuantityManuellyService
     {

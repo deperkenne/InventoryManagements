@@ -1,7 +1,7 @@
-﻿using BestandsManager.Logistics.Model;
-using BestandsManager.Logistics.Repository;
+﻿using InventoryManagement.Logistics.Models;
+using InventoryManagement.Logistics.Repositories;
 
-namespace BestandsManager.Logistics.Repositories.Impl
+namespace InventoryManagement.Logistics.Repositories.Impl
 {
     // USE THIS CLASS ONLY FOR INTEGRATION TESTING!
     public class InMemoryStockImpl : IStockRepository

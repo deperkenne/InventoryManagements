@@ -1,4 +1,4 @@
-﻿namespace BestandsManager.Logistics.Model
+﻿namespace InventoryManagement.Logistics.Models
 {
     public class OrderLineItem
     {
@@ -50,12 +50,12 @@
 
         public void SetSkus(string skus)
         {
-            this.Skus = skus;
+            Skus = skus;
         }
 
         public void SetProductName(string productName)
         {
-            this.ProductName = productName;
+            ProductName = productName;
         }
 
         public void SetOrderId(string orderId)

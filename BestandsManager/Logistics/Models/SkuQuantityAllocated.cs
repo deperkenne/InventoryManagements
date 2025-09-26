@@ -1,4 +1,4 @@
-﻿namespace BestandsManager.Logistics.Model
+﻿namespace InventoryManagement.Logistics.Models
 {
     public class SkuQuantityAllocated : DomainEvent
     {
@@ -11,12 +11,12 @@
 
         public SkuQuantityAllocated(string skuId, int quantity, string orderId, string eventType, string lineNumber, EnumOrderStatus enumStatus = EnumOrderStatus.RELEASED)
         {
-            this.SkuId = skuId;
-            this.QuantityAllocated = quantity;
-            this.OrderId = orderId;
-            this.EventType = eventType;
-            this.LineNumber = lineNumber;
-            this.Status = enumStatus;
+            SkuId = skuId;
+            QuantityAllocated = quantity;
+            OrderId = orderId;
+            EventType = eventType;
+            LineNumber = lineNumber;
+            Status = enumStatus;
         }
     }
 }

@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj",
-      "projectName": "BestandsManager",
-      "projectPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\BestandsManager.csproj",
+      "projectUniqueName": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj",
+      "projectName": "InventoryManagement",
+      "projectPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\InventoryManagement.csproj",
       "packagesPath": "C:\\Users\\Win11 Pro\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Win11 Pro\\source\\repos\\BestandsManager\\BestandsManager\\obj\\",
       "projectStyle": "PackageReference",

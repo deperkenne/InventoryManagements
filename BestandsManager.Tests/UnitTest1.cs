@@ -1,6 +1,4 @@
-using BestandsManager.Logistics.Model;
-
-namespace BestandsManager.Tests
+namespace InventotyManagement.Tests
 {
     public class CustomerOrderTests{}
 }

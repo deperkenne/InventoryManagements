@@ -1,4 +1,4 @@
-﻿namespace BestandsManager.Logistics.Model
+﻿namespace InventoryManagement.Logistics.Models
 {
     public enum EnumOrderStatus
     {

@@ -1,7 +1,7 @@
-﻿using BestandsManager.Logistics.Model;
+﻿using InventoryManagement.Logistics.Models;
 
 
-namespace BestandsManager.Logistics.Repository
+namespace InventoryManagement.Logistics.Repositories
 {
     public interface IOrderRepository
     {

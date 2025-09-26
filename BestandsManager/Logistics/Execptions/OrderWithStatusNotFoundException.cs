@@ -1,4 +1,4 @@
-﻿namespace BestandsManager.Logistics.Execptions
+﻿namespace InventoryManagement.Logistics.Execptions
 {
     internal class OrderWithStatusNotFoundException : Exception
     {

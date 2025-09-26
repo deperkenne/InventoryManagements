@@ -1,4 +1,4 @@
-﻿namespace BestandsManager.Logistics.Model
+﻿namespace InventoryManagement.Logistics.Models
 {
     public class Sku
     {
@@ -24,7 +24,7 @@
 
         public void SetAllocatedQuantity(int allocatedQuantity)
         {
-            this.AllocatedQuantity = allocatedQuantity;
+            AllocatedQuantity = allocatedQuantity;
         }
 
         public void SetLocationName(string locationName)

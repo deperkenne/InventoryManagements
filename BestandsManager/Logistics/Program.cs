@@ -1,11 +1,7 @@
-﻿using BestandsManager.Logistics.Logic;
-using BestandsManager.Logistics.Logics.Impl;
-using BestandsManager.Logistics.Repositories.Impl;
-using BestandsManager.Logistics.Repository;
-
-
-
-
+﻿using InventoryManagement.Logistics.Logics;
+using InventoryManagement.Logistics.Logics.Impl;
+using InventoryManagement.Logistics.Repositories;
+using InventoryManagement.Logistics.Repositories.Impl;
 
 
 InMemoryOrderImpl orderServiceImpl = new InMemoryOrderImpl();
@@ -28,9 +24,7 @@ Console.WriteLine("List of all SKUs before automatic and manual processing:\n\n\
 
 foreach (var stcok in stockServiceImpl.skuInMemory)
 {
-    Console.WriteLine("After allocation process");
-
-    Console.WriteLine($"SKU: {stcok.SkuId}, Available Quantity: {stcok.ProductName}  , isloked:  {stcok.GetIsLocked} , alocatedqtey:  {stcok.GetAllocatedQuantity()}");
+    Console.WriteLine($"SKU: {stcok.SkuId}, productName: {stcok.ProductName} , isloked: {stcok.GetIsLocked()}, alocatedqtey: {stcok.GetAllocatedQuantity()}");
 }
 
 await allocationService.ProcessMultipleOrdersForAllocationAsync(); // start the automatic process
@@ -42,9 +36,7 @@ Console.WriteLine("List of all Skus  after automatic process:\n\n\n");
 
 foreach (var stcok in stockServiceImpl.skuInMemory)
 {
-    Console.WriteLine("After allocation process");
-
-    Console.WriteLine($"SKU: {stcok.SkuId}, Available Quantity: {stcok.ProductName} , isloked: {stcok.GetIsLocked}, alocatedqtey: {stcok.GetAllocatedQuantity()}");
+    Console.WriteLine($"SKU: {stcok.SkuId}, productName: {stcok.ProductName} , isloked: {stcok.GetIsLocked()}, alocatedqtey: {stcok.GetAllocatedQuantity()}");
 }
 
 await adjustSkuQuantityService.AdjustSkuQuantityManuallyAsync("skuId_04", 20); // start  Manually Process
@@ -53,9 +45,7 @@ Console.WriteLine("List of all Skus after Manually process:\n\n\n");
 
 foreach (var stcok in stockServiceImpl.skuInMemory)
 {
-    Console.WriteLine("After allocation process");
-
-    Console.WriteLine($"SKU: {stcok.SkuId}, Available Quantity: {stcok.ProductName} , isloked: {stcok.GetIsLocked}, alocatedqtey: {stcok.GetAllocatedQuantity()}");
+    Console.WriteLine($"SKU: {stcok.SkuId}, productName: {stcok.ProductName} , isloked: {stcok.GetIsLocked()}, alocatedqtey: {stcok.GetAllocatedQuantity()}");
 }
 
 
