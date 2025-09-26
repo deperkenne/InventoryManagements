@@ -12,3 +12,4 @@ C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0
 C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.pdb
 C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.genruntimeconfig.cache
 C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\ref\BestandsManager.dll
+C:\Users\Win11 Pro\source\repos\BestandsManager\BestandsManager\obj\Debug\net8.0\BestandsManager.sourcelink.json

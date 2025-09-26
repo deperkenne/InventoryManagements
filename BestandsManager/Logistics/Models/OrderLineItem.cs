@@ -3,23 +3,15 @@
     public class OrderLineItem
     {
         private string Id { get; set; } = Guid.NewGuid().ToString();
-
         private string ProductName { get; set; }
-
         private int QuantityRequested { get; set; }
-
         private string Skus { get; set; } 
-
-
         public OrderLineItem(string productName, int Quantity,string sku)
         {
-
             ProductName = productName;
             QuantityRequested = Quantity;
             Skus = sku;
         }
-
-
 
         public override string ToString()
         {
@@ -29,12 +21,7 @@
                 orderlinesku += sku + ";";
             }
             return $" linenumber: {Id} productname: {ProductName} quantityrequested: {QuantityRequested}\n orderLineSku:[ {orderlinesku} ]";
-
-
         }
-
-
-
 
         public int GetQuantityRequested()
         {
@@ -56,14 +43,10 @@
             return ProductName;
         }
 
-
         public string GetSkus()
         {
             return Skus;
         }
-
-
-   
 
         public void SetSkus(string skus)
         {
@@ -79,9 +62,6 @@
         {
             Id = orderId;
         }
-
-
-
 
     }
 }

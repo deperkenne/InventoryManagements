@@ -3,21 +3,18 @@ using BestandsManager.Logistics.Repository;
 
 namespace BestandsManager.Logistics.Repositories.Impl
 {
+    // USE THIS CLASS ONLY FOR INTEGRATION TESTING!
     public class InMemoryStockImpl : IStockRepository
     {
-
         public List<Sku> skuInMemory = new List<Sku>();
-      
 
         public InMemoryStockImpl()
         {
             InitializeWarehouse();
-
         }
 
         public void InitializeWarehouse()
         {
-
             Sku sku_01 = new Sku("skuId_01", "COLA_L1", "Shelf 1", false, 100);
             Sku sku_02 = new Sku("skuId_02", "COLA_L1", "Shelf 2", true, 200);
             Sku sku_03 = new Sku("skuId_03", "FANTA_L1", "Shelf 2", false, 200);
@@ -35,9 +32,7 @@ namespace BestandsManager.Logistics.Repositories.Impl
             skuInMemory.Add(sku_06);
             skuInMemory.Add(sku_07);
             skuInMemory.Add(sku_08);
-
         }
-
 
         public async Task<int> GetAvailableQuantityAsync(string skuId)
         {
@@ -45,8 +40,8 @@ namespace BestandsManager.Logistics.Repositories.Impl
             {
                 throw new ArgumentException("SKU ID cannot be null or empty.");
             }
-            Task.Delay(2000).Wait(); // Simulate some async work
 
+            Task.Delay(2000).Wait(); // Simulate some async work
             var availableQuantity = skuInMemory.Where(s => s.SkuId == skuId && s.GetIsLocked() == false).Sum(s => s.GetAllocatedQuantity());
 
             return availableQuantity;
@@ -58,6 +53,7 @@ namespace BestandsManager.Logistics.Repositories.Impl
             {
                 throw new ArgumentException("Product name cannot be null or empty.");
             }
+
             var skus = skuInMemory.Where(s => s.ProductName == productName && s.GetIsLocked() == false).ToList();
 
             return skus;
@@ -69,17 +65,15 @@ namespace BestandsManager.Logistics.Repositories.Impl
            
             var existingSku = await GetSkuByIdAsync(skuid);
 
-            if (existingSku != null) existingSku.SetAllocatedQuantity(existingSku.GetAllocatedQuantity() - quantity);
-          
+            if (existingSku != null) existingSku.SetAllocatedQuantity(existingSku.GetAllocatedQuantity() - quantity);  
         }
 
         public async Task<List<Sku>> GetAvailableSkusAsync(string productName)
         {
-
             if (string.IsNullOrEmpty(productName)) throw new ArgumentException("Product name cannot be null or empty.");
             
             List<Sku> availableSkus = new List<Sku>();
-            // var availableSkus = skuInMemory.Where(s => s.productName == productName && s.isLocked == false).ToList();
+
             foreach (var sku in skuInMemory)
             {
                 if (sku.ProductName == productName && sku.GetIsLocked() == false)
@@ -109,19 +103,26 @@ namespace BestandsManager.Logistics.Repositories.Impl
             if (existingSku != null)
             {
                 int qty = existingSku.GetAllocatedQuantity();
-
                 existingSku.SetAllocatedQuantity(qty + quantity);
-
                 Console.WriteLine(existingSku.GetAllocatedQuantity());
-
             }
         }
 
         public async Task ManuallyUpdate(string sku, int quantity)
         {
             var existingSku = await GetSkuByIdAsync(sku);
-
             existingSku.SetAllocatedQuantity(quantity);
+        }
+
+        /// <summary>
+        /// Updates the quantity of SKUs in the stock repository.
+        /// </summary>
+        public async Task ApplyAllocationsAsync(List<(Sku sku, int quantity,string line)> allocations)
+        {
+            foreach (var (sku, quantity, line) in allocations)
+            {
+                await UpdateQuantityAsync(sku.SkuId, quantity);
+            }
         }
     }
 }

@@ -3,7 +3,6 @@
     public class Sku
     {
         public string SkuId { get; }
-
         private int AllocatedQuantity { get; set; }
         private bool IsLocked { get; set; }
         public string ProductName { get; }
@@ -15,11 +14,8 @@
             ProductName = productName;
             LocationName = locationName;
             IsLocked = isLocked;
-            AllocatedQuantity = allocatedQuantity;
-            
+            AllocatedQuantity = allocatedQuantity; 
         }
-
-
 
         public int GetAllocatedQuantity()
         {
@@ -29,7 +25,6 @@
         public void SetAllocatedQuantity(int allocatedQuantity)
         {
             this.AllocatedQuantity = allocatedQuantity;
-
         }
 
         public void SetLocationName(string locationName)
@@ -46,7 +41,6 @@
         {
             IsLocked = isLocked;
         }
-
 
         public string GetLocationName()
         {
